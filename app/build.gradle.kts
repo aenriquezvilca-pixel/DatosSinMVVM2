@@ -32,12 +32,15 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+    kotlinOptions {
+        jvmTarget = "11"
+    }
     buildFeatures {
         compose = true
     }
 }
 
-val room_version = "2.6.1"
+val room_version = "2.8.5"
 
 dependencies {
     implementation("androidx.room:room-runtime:$room_version")
